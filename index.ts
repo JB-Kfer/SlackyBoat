@@ -24,7 +24,7 @@ const extractGuess = async (req: Request) => {
   return guess;
 };
 
-const responseBuilder = (word: string, similarity: Number) => {
+const responseBuilder = (word: string, similarity: number) => {
   if (similarity == 1) {
     return `Well played ! The word was ${word}.`;
   } else if (similarity > 0.5) {
